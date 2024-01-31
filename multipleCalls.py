@@ -1,6 +1,6 @@
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
@@ -49,6 +49,7 @@ class Person(BaseModel):
     """A person object that we want to extract from the text"""
     name: str
     age: int
+    description: str
 
 # Previous we had to write this:
 class Persons(BaseModel):
